@@ -1,0 +1,111 @@
+/* ---------- FONTS ---------- */
+:root {
+  --font-body: 'Avenir Next', 'Avenir', 'Helvetica Neue', sans-serif;
+  --font-head: 'Baskerville', 'Palatino', Georgia, serif;
+}
+
+/* ---------- LIGHT: red rock ground, green on top ---------- */
+:root {
+  --theme: #F5E9DA;        /* your sand */
+  --entry: #FBF3E8;
+  --primary: #4F6650;      /* deep sage: headings */
+  --secondary: #9A5A50;    /* dusty red-brown: dates, meta */
+  --tertiary: #EBD3C6;     /* pale rose: tags */
+  --content: #2E2420;
+  --border: #DDBFAE;       /* red-tinted lines */
+  --code-bg: #EBDCCB;
+  --crimson: #A5493F;
+  --sage: #5F7A5E;
+  --turquoise: #0F7F78;
+  --on-red: #FBF3E8;
+  --on-red-accent: #9BE5DA;  /* light turquoise, readable on red */
+}
+
+/* ---------- DARK: desert at dusk ---------- */
+.dark {
+  --theme: #1E1814;
+  --entry: #2A211B;
+  --primary: #A9BCA3;
+  --secondary: #D9A79C;
+  --tertiary: #3A2A25;
+  --content: #EADCCB;
+  --border: #4A322B;
+  --code-bg: #2C2420;
+  --crimson: #7A332C;
+  --sage: #7F9A7C;
+  --turquoise: #4FD1C0;
+  --on-red: #F1E3D3;
+  --on-red-accent: #9BE5DA;
+}
+
+/* one background everywhere (PaperMod gives list pages their own) */
+body, body.list, .dark.list { background: var(--theme); }
+body { font-family: var(--font-body); }
+h1, h2, h3, h4, .logo a, .post-title { font-family: var(--font-head); }
+h1, h2, h3 { color: var(--primary); }
+::selection { background: var(--turquoise); color: #fff; }
+
+/* header: solid crimson band, sand text */
+.header { background: var(--crimson); border: 0; }
+.header, .header a, .header button { color: var(--on-red); }
+.logo a { letter-spacing: .04em; }
+.menu a { letter-spacing: .06em; text-transform: uppercase; font-size: 14px; }
+.menu a:hover { color: var(--on-red-accent); }
+.menu .active { color: var(--on-red); border-bottom: 2px solid var(--on-red-accent); }
+
+/* links turquoise, hover crimson */
+.post-content a { color: var(--turquoise); box-shadow: none; border-bottom: 1px solid currentColor; }
+.post-content a:hover { color: var(--crimson); }
+
+/* cards: red edge, turquoise on hover */
+.post-entry { border: 1px solid var(--border); border-left: 4px solid var(--crimson); }
+.post-entry:hover { border-left-color: var(--turquoise); }
+
+/* homepage buttons: green, turquoise on hover */
+.button { background: var(--sage); color: #FBF3E8; border: 0; }
+.button:hover { background: var(--turquoise); }
+
+#.post-tags a { background: var(--tertiary); color: var(--primary); }
+.post-tags a {
+  background: var(--tertiary);
+  color: var(--primary);
+  font-size: 12px;
+  line-height: 22px;
+  padding: 0 9px;
+  border-radius: 4px;
+}
+.post-tags li { margin: 2px 4px 2px 0; }
+pre, code { border-radius: 6px; }
+
+
+/* ---------- Poetry blurb box ---------- */
+.form-blurb {
+  margin: 0 0 26px;
+  padding: 16px 20px 18px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--turquoise);
+  border-radius: 6px;
+  color: var(--content);
+  line-height: 1.6;
+  text-align: center;
+  font-size: 14px;
+}
+.form-blurb p { margin: 0; }
+.form-blurb-label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: var(--font-head);
+  font-size: 13px;
+
+.form-blurb ul {
+  display: inline-block;
+  text-align: left;
+  margin: 10px auto 0;
+  padding-left: 1.2em;
+}
+.form-blurb li::marker { color: var(--turquoise); }
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--primary);
+}

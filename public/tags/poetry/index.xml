@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Poetry on druke.sh</title>
+    <link>http://localhost:1313/tags/poetry/</link>
+    <description>Recent content in Poetry on druke.sh</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Placeholder poem</title>
+      <link>http://localhost:1313/poetry/first-poem/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/poetry/first-poem/</guid>
+      <description>&lt;p&gt;Red stone holds the evening,&lt;br&gt;
+turquoise sky lets go.&lt;br&gt;
+Somewhere a long road bends&lt;br&gt;
+and the engine ticks as it cools.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

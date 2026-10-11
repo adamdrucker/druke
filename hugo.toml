@@ -1,0 +1,53 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'druke.sh'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+
+  [params.profileMode]
+    enabled = true
+    title = 'Adam'
+    subtitle = 'Linux systems, writing, and desert light.'
+    [[params.profileMode.buttons]]
+      name = 'Tech'
+      url = '/tech/'
+    [[params.profileMode.buttons]]
+      name = 'Music'
+      url = '/music/'
+    [[params.profileMode.buttons]]
+      name = 'Poetry'
+      url = '/poetry/'
+    [[params.profileMode.buttons]]
+      name = 'Photos'
+      url = '/photos/'
+
+[[menu.main]]
+  name = 'About'
+  url = '/about/'
+  weight = 1
+[[menu.main]]
+  name = 'Tech'
+  url = '/tech/'
+  weight = 2
+[[menu.main]]
+  name = 'Music'
+  url = '/music/'
+  weight = 3
+[[menu.main]]
+  name = 'Poetry'
+  url = '/poetry/'
+  weight = 4
+[[menu.main]]
+  name = 'Photos'
+  url = '/photos/'
+  weight = 5
+[[menu.main]]
+  name = 'Ramblings'
+  url = '/ramblings/'
+  weight = 6
+

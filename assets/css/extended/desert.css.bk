@@ -1,0 +1,39 @@
+/* Sedona: red rock + sand, turquoise and silver accents */
+:root {
+  --theme: #F5E9DA;
+  --entry: #FBF3E8;
+  --primary: #3A2820;
+  --secondary: #7D5E4B;
+  --tertiary: #E2CDB5;
+  --content: #2E2420;
+  --border: #E4D0B8;
+  --code-bg: #EFE0CC;
+  --turquoise: #1E9C93;
+  --terracotta: #B5502F;
+  --silver: #A9AEB3;
+}
+.dark {
+  --theme: #1F1612;
+  --entry: #2A1D17;
+  --primary: #F1E3D3;
+  --secondary: #B89B85;
+  --tertiary: #4A3328;
+  --content: #E8D9C8;
+  --border: #3A2A22;
+  --code-bg: #34241C;
+  --turquoise: #4FD1C0;
+}
+
+body { background: var(--theme); }
+::selection { background: var(--turquoise); color: #fff; }
+
+/* silver rule under the top menu, turquoise for the active page */
+.header { border-bottom: 1px solid var(--silver); }
+.menu a:hover, .menu .active { color: var(--turquoise); }
+.logo a { font-family: Georgia, 'Iowan Old Style', serif; letter-spacing: .04em; }
+
+/* headings and links */
+h1, h2, h3 { font-family: Georgia, 'Iowan Old Style', serif; }
+.post-content a { color: var(--turquoise); }
+.post-content a:hover { color: var(--terracotta); }
+.post-entry { border: 1px solid var(--border); }
