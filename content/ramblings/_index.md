@@ -1,3 +1,3 @@
 +++
-#title = 'Opinions'
+title = 'Ramblings'
 +++

@@ -1,5 +1,6 @@
 +++
 title = 'About'
+hidemeta = true
 +++
 
 I'm a Linux system administrator working in high-performance computing.
@@ -14,3 +15,4 @@ Hobbies: guitar (acoustic and electric), exercise, travel
 ## Elsewhere
 - Email: addrucker@gmail.com
 - Github: [adamdrucker](https://github.com/adamdrucker)
+- LinkedIn: [Adam Drucker](https://www.linkedin.com/in/adam-drucker-413ad43)

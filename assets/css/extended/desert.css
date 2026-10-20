@@ -54,7 +54,15 @@ h1, h2, h3 { color: var(--primary); }
 .menu .active { color: var(--on-red); border-bottom: 2px solid var(--on-red-accent); }
 
 /* links turquoise, hover crimson */
-.post-content a { color: var(--turquoise); box-shadow: none; border-bottom: 1px solid currentColor; }
+#.post-content a { color: var(--turquoise); box-shadow: none !important; text-decoration: none; border-bottom: 1px solid currentColor; }
+.post-content a, .md-content a:not(.anchor) {
+  color: var(--turquoise);
+  box-shadow: none;
+  border-bottom: 0;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .25em;
+}
 .post-content a:hover { color: var(--crimson); }
 
 /* cards: red edge, turquoise on hover */
